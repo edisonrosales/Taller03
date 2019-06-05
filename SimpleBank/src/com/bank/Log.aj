@@ -25,7 +25,7 @@ public aspect Log {
     	if(archivo.exists()) {
     	      try {
     	    	  bw = new BufferedWriter(new FileWriter(archivo.getAbsoluteFile(),true));
-  	  	      	  bw.write("Transferencia"+ cal.getTime());
+  	  	      	  bw.write("Transaccion realizada"+ cal.getTime());
   	  	      	  bw.append("\r\n");
   	  	      	  bw.close();
 
@@ -35,7 +35,7 @@ public aspect Log {
       	} else {
     	      try {
     	    	  bw = new BufferedWriter(new FileWriter(archivo.getAbsoluteFile(),true));
-  	  	      		bw.write("Transferencia"+ cal.getTime());
+  	  	      		bw.write("Transaccion realizada"+ cal.getTime());
   	  	      		bw.append("\r\n");
   	  	      		bw.close();
   		} catch (IOException e) {
